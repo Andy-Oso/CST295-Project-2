@@ -22,7 +22,46 @@
 </ul>
 </nav>
 <section>
-<h2></h2>
+<h2>What Day Is It?</h2>
+<script>
+	var input = prompt("Enter a day abbreviation or number", 0);
+	var result;
+	
+	switch (input){
+		default:
+			result = "Abbreviation or number is invalid!"
+		case "1":
+			result = "The day is Sunday";
+		case "Sun":
+			result = "The day is Sunday";
+		case "2":
+			result = "The day is Monday";
+		case "Mon":
+			result = "The day is Monday";
+		case "3":
+			result = "The day is Tuesday";
+		case "Tue"
+			result = "The day is Tuesday";
+		case "4":
+			result = "It's Wednesday my dudes";
+		case "Wed":
+			result = "It's Wednesday my dudes";
+		case "5":
+			result = "The day is Thursday";
+		case "Thur":
+			result = "The day is Thursday";
+		case "6":
+			result = "The day is Friday";
+		case "Fri":
+			result = "The day is Friday";
+		case "7":
+			result = "The day is Saturday";
+		case "Sat":
+			result = "The day is Saturday";
+		}
+	document.write("<p>Your day input is " + input + "</p>");
+	document.write(result);
+</script>
 </section>
 <footer>
 <address>SCCC &bull; 1001 Crooked Hill Road &bull; Brentwood NY 11717

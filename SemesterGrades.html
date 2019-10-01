@@ -22,7 +22,39 @@
 </ul>
 </nav>
 <section>
-<h2></h2>
+<h2>Semester Grades</h2>
+<script>
+	do{
+	var semAvg =  prompt("Please enter an average, between 0-100", 0);
+	var semAvg = parseInt(semAvg);
+	}while(semAvg > 100 || semAvg < 0)
+	
+	if(semAvg >= 90){
+		document.write("<p>Your semester average is " + semAvg + "</p>");
+		document.write("<p>Your grade for the term is A</p>");
+	}else if(semAvg >= 85 && semAvg <= 89){
+		document.write("<p>Your semester average is " + semAvg + "</p>");
+		document.write("<p>Yoiur grade for the term is B+</p>");
+	}else if(semAvg >= 80 && semAvg <= 84){
+		document.write("<p>Your semester average is " + semAvg + "</p>");
+		document.write("<p>Your grade for the term is B</p>");
+	}else if(semAvg >= 75 && semAvg <= 79){
+		document.write("<p>Your semester average is " + semAvg + "</p>");
+		document.write("<p>Your grade for the term is C+</p>");
+	}else if(semAvg >= 70 && semAvg <= 74){
+		document.write("<p>Your semester average is " + semAvg + "</p>");
+		document.write("<p>Your grade for the term is C</p>");
+	}else if(semAvg >= 65 && semAvg <= 69){
+		document.write("<p>Your semester average is " + semAvg + "</p>");
+		document.write("<p>Your grade for the term is D+</p>");
+	}else if(semAvg >= 60 && semAvg <= 64){
+		document.write("<p>Your semester average is " + semAvg + "</p>");
+		document.write("<p>Your grade for the term is D</p>");
+	}else if(semAvg < 60){
+		document.write("<p>Your semester average is " + semAvg + "</p>");
+		document.write("<p>Your grade for the term is F</p>");
+	}
+</script>
 </section>
 <footer>
 <address>SCCC &bull; 1001 Crooked Hill Road &bull; Brentwood NY 11717
