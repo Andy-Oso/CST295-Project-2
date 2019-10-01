@@ -6,6 +6,7 @@
 <link rel="stylesheet" type="text/css" href="sa_layout.css">
 <link rel="stylesheet" type="text/css" href="sa_styles.css">
 <link rel="icon" type="image/png" href="javascript.ico">
+<!--Andy Osorio, October 1, 2019-->
 </head>
 <body>
 <header>
@@ -22,7 +23,22 @@
 </ul>
 </nav>
 <section>
-<h2></h2>
+<h2>Temperature Conversions</h2>
+<table>
+<tr><th>Celsius</th><th>Farenheit</th></tr>
+<script>
+	var cel = 0;
+	var far;
+	for(var i = 0; i <= 10; i++){
+		far =  (cel * 9/5) + 32;
+		document.write("<tr>");
+		document.write("<td>"+ cel +"</td>");
+		document.write("<td>"+ far +"</td>");
+		document.write("</tr>");
+		cel += 10;
+	}
+</script>
+</table>
 </section>
 <footer>
 <address>SCCC &bull; 1001 Crooked Hill Road &bull; Brentwood NY 11717

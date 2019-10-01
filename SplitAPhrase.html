@@ -6,6 +6,7 @@
 <link rel="stylesheet" type="text/css" href="sa_layout.css">
 <link rel="stylesheet" type="text/css" href="sa_styles.css">
 <link rel="icon" type="image/png" href="javascript.ico">
+<!--Andy Osorio, October 1, 2019-->
 </head>
 <body>
 <header>
@@ -22,7 +23,23 @@
 </ul>
 </nav>
 <section>
-<h2></h2>
+<h2>Split a Phrase</h2>
+<script>
+	var input = prompt("Enter a phrase, any phrase!", "split a phrase");
+	var splitArray = input.split(" ");
+</script>
+<table>
+<tr><th>Index</th><th>Word</th></tr>
+<script>
+	var index;
+	for(index in splitArray){
+		document.write("<tr>");
+		document.write("<td>" + index + "</td>");
+		document.write("<td>" + splitArray[index] + "</td>");
+		document.write("</tr>");
+	}
+</script>
+</table>
 </section>
 <footer>
 <address>SCCC &bull; 1001 Crooked Hill Road &bull; Brentwood NY 11717

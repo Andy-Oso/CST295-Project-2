@@ -6,6 +6,7 @@
 <link rel="stylesheet" type="text/css" href="sa_layout.css">
 <link rel="stylesheet" type="text/css" href="sa_styles.css">
 <link rel="icon" type="image/png" href="javascript.ico">
+<!--Andy Osorio, October 1, 2019-->
 </head>
 <body>
 <header>
@@ -24,43 +25,57 @@
 <section>
 <h2>What Day Is It?</h2>
 <script>
-	var input = prompt("Enter a day abbreviation or number", 0);
-	var result;
-	
-	switch (input){
-		default:
-			result = "Abbreviation or number is invalid!"
-		case "1":
-			result = "The day is Sunday";
-		case "Sun":
-			result = "The day is Sunday";
-		case "2":
-			result = "The day is Monday";
-		case "Mon":
-			result = "The day is Monday";
-		case "3":
-			result = "The day is Tuesday";
-		case "Tue"
-			result = "The day is Tuesday";
-		case "4":
-			result = "It's Wednesday my dudes";
-		case "Wed":
-			result = "It's Wednesday my dudes";
-		case "5":
-			result = "The day is Thursday";
-		case "Thur":
-			result = "The day is Thursday";
-		case "6":
-			result = "The day is Friday";
-		case "Fri":
-			result = "The day is Friday";
-		case "7":
-			result = "The day is Saturday";
-		case "Sat":
-			result = "The day is Saturday";
-		}
+	var input = prompt("Enter a day abbreviation or number", "");
 	document.write("<p>Your day input is " + input + "</p>");
-	document.write(result);
+	
+	switch (input)
+	{
+		case "1":
+			document.write("<p>The day is Sunday</p>");
+			break;
+		case "Sun":
+			document.write("<p>The day is Sunday</p>");
+			break;
+		case "2":
+			document.write("<p>The day is Monday</p>");
+			break;
+		case "Mon":
+			document.write("<p>The day is Monday</p>");
+			break;
+		case "3":
+			document.write("<p>The day is Tuesday</p>");
+			break;
+		case "Tue":
+			document.write("<p>The day is Tuesday</p>");
+			break;
+		case "4":
+			document.write("<p>It's Wednesday my dudes</p>");
+			break;
+		case "Wed":
+			document.write("<p>It's Wednesday my dudes</p>");
+			break;
+		case "5":
+			document.write("<p>The day is Thursday</p>");
+			break;
+		case "Thur":
+			document.write("<p>The day is Thursday</p>");
+			break;
+		case "6":
+			document.write("<p>The day is Friday</p>");
+			break;
+		case "Fri":
+			document.write("<p>The day is Friday</p>");
+			break;
+		case "7":
+			document.write("<p>The day is Saturday</p>");
+			break;
+		case "Sat":
+			document.write("<p>The day is Saturday</p>");
+			break;
+		default:
+			document.write("<p>Abbreviation or number invalid!");
+	}
+	
 </script>
 </section>
 <footer>
